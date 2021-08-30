@@ -85,17 +85,17 @@ function Turn() //누구의 턴인지 알려주는 함수
     if(score>0)  //스코어가 0보다 크다면
     {
       alert("YOU WIN!!");   //게임 승리
-      location.href='home.html';
+      location.href='index.html';
     }
     else if(score==0)  //스코어가 0이라면
     {
       alert("DRAW");  //게임 무승부
-      location.href='home.html'
+      location.href='index.html'
     }
     else  //스코어가 0 미만이라면
     {
       alert("YOU LOSE..");   //게임 패배
-      location.href='home.html'
+      location.href='index.html'
     }
     rst=[];
     card=[];   //카드 배열 빈배열로 다시 초기화
