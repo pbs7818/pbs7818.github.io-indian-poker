@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Poker Game - Rule</title>
+    <style mdeia="screen">
+        body{
+            background:linear-gradient(to top, black, rgb(145, 9, 49), rgb(173, 11, 60), rgb(145, 9, 49), black);
+            background-attachment: fixed;
+        }
+        input{
+            width: 90px;
+            height: 40px;
+            margin : 20px;
+            margin-top: 40px;
+        }
+        .body{
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -250px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .button_font{
+            color : gold;
+            background-color: rgb(34, 33, 0);
+            text-shadow: 3px 3px 3px brown;
+            border-style:groove;
+            border-width : 3px;
+            border-color: rgb(158, 147, 132);
+            font-weight: bold;
+        }
+        .Indian_Poker{
+            color : gold;
+            text-shadow: 3px 3px 3px brown;
+            background-color: rgb(34, 33, 0);
+            font-size : 35px;
+            font-weight: bold;
+            border-style:groove;
+            border-width : 5px;
+            border-color: rgb(158, 147, 132);
+            padding : 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="Indian_Poker">인디언 포커</div>
+    <div class="body">
+        컴퓨터와 1대1로 승부하는 [인디언 포커] 게임<br><br>
+        일반적으로 사람과 1대1로 게임하는 인디언 포커와는 다르게 진행<br><br>
+        제한된 카드 세트에서 자신의 카드는 못 보고 상대방의 숫자만 볼 수 있다.<br>
+        그 상황에서 Call 또는 Die를 선택해 더 높은 숫자인 쪽이 이기는 게임이다.<br><br>
+        규칙<br>
+        - 칩 베팅이 없이 점수를 얻거나 잃는 방식<br>
+        - 게임은 Call과 Die만 존재<br>
+        - 상대방의 카드 정보와 나의 카드 카운팅만을 통해 결정<br>
+        - 게임은 1부터 10까지의 카드 2세트를 사용해 진행<br>
+        - 플레이어의 턴부터 시작해 컴퓨터와 번갈아가며 진행<br>
+        - 총 10라운드, 즉 2세트의 카드가 모두 열릴 때까지 진행<br>
+        - 자신의 턴에 Call 또는 Die를 선택<br>
+        - 컴퓨터는 상대의 카드 숫자에 랜덤한 수를 더하여 Call 또는 Die 판별<br>
+        - Call로 이기면 +150점<br>
+        - Call로 지면 -200점<br>
+        - 상대의 Die +50점 (단, 상대가 10을 들고 Die 하면 +300)<br>
+        - 본인의 Die -50점 (단, 본인이 10을 들고 Die 하면 -300)<br>
+        - 서로 숫자가 같으면 드로우, +0점<br>
+        - 게임이 종료되고 점수가 0점보다 많으면 승리! 
+        <div style="margin-left: 130px;">
+            <input class="button_font" type="button" name="" value="돌아가기" onClick="location.href='home.html'">
+        </div>
+    </div>
+    </center>
+</body>
+</html>
